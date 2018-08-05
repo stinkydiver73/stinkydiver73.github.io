@@ -5,7 +5,7 @@
   "background_color": "rgba(83,80,219,0.97)",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/t.html",
+  "start_url": "/pt100calc/pt100calc.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
