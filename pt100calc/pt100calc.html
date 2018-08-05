@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="manifest" href="manifest.json">   
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="pt100calc.css">
+</head>
+
+<body>
+    <div class="t-grey flexcenter">
+        
+        <h3>PT100 calculator</h3>
+
+        <div class="ohm">
+            <input type="number" name=ohm id=ohm>
+            <span>Ohm</span>
+        </div>
+        <div class="">
+            <button id=gomb class="">Calculate</button>
+        </div>
+        <div id=calc class="temp">x</div>
+    </div>
+
+    <script src="rtd.js "></script>
+    <script src="pt100calc.js"></script>
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
