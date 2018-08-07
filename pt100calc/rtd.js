@@ -2,7 +2,7 @@ function pt100res(temp) {
     let R0 = 100
     let A = 3.9083e-3
     let B = -5.7750e-7
-    let ohm = R0 * (1 + A * temp + B * (temp * temp))
+    let ohm = R0 + (1 + A * temp + B * (temp * temp))
     return ohm
 }
 
