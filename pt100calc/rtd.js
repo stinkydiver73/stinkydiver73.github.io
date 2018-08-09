@@ -1,4 +1,4 @@
-function pt100res(temp) {
+export const pt100res = function(temp) {
     let R0 = 100
     let A = 3.9083e-3
     let B = -5.7750e-7
@@ -6,7 +6,7 @@ function pt100res(temp) {
     return ohm
 }
 
-function pt100temp(ohm) {
+export const pt100temp = function(ohm) {
     let R0 = 100
     let A = 3.9083e-3
     let B = -5.7750e-7

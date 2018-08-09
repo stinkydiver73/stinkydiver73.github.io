@@ -1,3 +1,5 @@
+import { pt100temp } from './rtd.js';
+
 document.getElementById("gomb").addEventListener("click",
 function () {
     console.log("clicked")
