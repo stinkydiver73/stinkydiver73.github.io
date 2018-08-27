@@ -8,3 +8,5 @@ function () {
     console.log(szam)
     document.getElementById("calc").innerHTML = pt100temp(szam).toFixed(1)+"&#8451;"
 });
+
+document.getElementById("navver").innerHTML = navigator.userAgent;

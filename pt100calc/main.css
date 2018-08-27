@@ -38,3 +38,9 @@ input {
 .ohm {
       background-color: aliceblue;
 }
+
+#navver {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+}
